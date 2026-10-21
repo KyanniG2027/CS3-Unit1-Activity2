@@ -113,6 +113,38 @@ def main():
     print(my_dict)
     # What keys and values are present?
     # his name, his age, and his grade
+    print(my_dict["age"])
+    # What value did this return?
+    #this returned 16 
+
+   # print(my_dict["school"])
+    # What error do you get?
+    #I got a my_dict error 
+
+    my_dict["grade"] = "12th"
+    print(my_dict)
+    # Did the value update?
+    #the value of the grade changed to 12th 
+
+    my_dict["school"] = "Central High"
+    print(my_dict)
+    # What’s the new key and value?
+    #The new key is school and central high 
+
+    del my_dict["age"]
+    print(my_dict)
+    # Which key is missing now?
+    #the age is now missing 
+
+    print(my_dict.get("locker"))
+    # What value was returned? Was there an error?  
+    #None was returned, there was no error 
+
+    for key, value in my_dict.items():
+        print(key, "->", value)
+    # What got printed? How does this help you read the dictionary?
+    #name -> Sam grade -> 12th school -> Central High got printed. It gives us a better layout to read to code. Now the information is verticle, instead of horizontale. 
+
 
     
 
