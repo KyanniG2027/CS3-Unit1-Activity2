@@ -78,9 +78,44 @@ def main():
     print(colors.index("green"))
     # What position is "green" in the tuple? The position is 3 
     
+    my_set = {"apple", "banana", "cherry"}
+    print(my_set)
+    # Does the order match what you typed? Why or why not?
+    #No the order does not match my type. It is because these sets are unordered 
 
+    my_set.add("orange")
+    print(my_set)
+    # What changed?
+    #Orange has been added to the set as the first index
+
+    my_set.add("banana")
+    print(my_set)
+    #Did anything change? Why or why not?
+    #Now banana is in the first index while orange in in the second
+
+    my_set.remove("apple")
+    print(my_set)
+    # Which item is gone?
+    #apple is now gone within the set because of the remove on line 96
+
+    my_set.discard("pear")
+    # What happened? Was there an error?
+    #there was no error because pear was not origninally in the list
+
+    tropical = {"banana", "mango", "papaya"}
+    all_fruits = my_set.union(tropical)
+    print(all_fruits)
+    # What items are in the result? Any duplicates?
+    #this is the end result {'mango', 'orange', 'cherry', 'papaya', 'banana'} there are no duplicates 
 
     
+    my_dict = {"name": "Sam", "age": 16, "grade": "11th"}
+    print(my_dict)
+    # What keys and values are present?
+    # his name, his age, and his grade
+
+    
+
 
 
 
